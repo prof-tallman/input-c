@@ -22,7 +22,7 @@ int main(int argc, char* argv[])
     memset(buffer, 0, buffer_size);
 
     // Get the user input
-    if (get_line(buffer, buffer_size) != EXIT_SUCCESS)
+    if (get_line_static(buffer, buffer_size) != EXIT_SUCCESS)
     {
         printf("Error: cannot read from stdin %s:%d\n", __FILE__, __LINE__);
         return EXIT_FAILURE;
