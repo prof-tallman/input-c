@@ -3,7 +3,7 @@
 #include <string.h>
 #include "console_util.h"
 
-int main(int argc, char* argv[])
+int main()
 {
     printf("Please type a line of input: ");
 

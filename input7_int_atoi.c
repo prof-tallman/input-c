@@ -5,7 +5,7 @@
 
 #define debug(msg) fprintf(stderr, "INFO %s:%d: %s\n", __FILE__, __LINE__, msg);
 
-int main(int argc, char* argv[])
+int main()
 {
     printf("What is your favorite number? ");
 

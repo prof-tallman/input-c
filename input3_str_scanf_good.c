@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(int argc, char* argv[])
+int main()
 {
     printf("What is your favorite ice cream? ");
 

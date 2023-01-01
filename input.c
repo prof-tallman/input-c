@@ -3,7 +3,7 @@
 #include "console_util.h"
 
 
-int main(int argc, char* argv[])
+int main()
 {
     int rc = EXIT_FAILURE;
 
