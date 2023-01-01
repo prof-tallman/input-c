@@ -31,6 +31,7 @@ input7.exe: input7_int_atoi.c
 input8.exe: input8_int_scanf.c
 input9.exe: input9_int_strtol.c
 input.exe:  input.c (uses the console_util library)
+
 %
 ```
 
