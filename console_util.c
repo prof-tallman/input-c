@@ -32,7 +32,7 @@ int get_line_static(char* buffer, int buf_size)
 int get_line_dynamic(char** buffer, size_t* size)
 {
     size_t length = getline(buffer, size, stdin);
-    if (length == -1)
+    if (length == (size_t)-1)
     {
         debug("cannot getline() from stdin");
         *buffer = NULL;
