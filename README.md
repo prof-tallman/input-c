@@ -1,7 +1,7 @@
 # Input-C
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-How to read input from the command line with C99
+Demonstrates how to read input from the command line with C99
 
 ## Table of Contents
 - [Install](#install)
@@ -14,6 +14,7 @@ How to read input from the command line with C99
 There are 10 input demo programs and they can all be compiled with the included makefile; simply run `make all`. Each and every program meets the C99 standard and can be compiled with `-Wall`, `-Wextra`, and `-pedantic` without any errors. One of the programs will produce a depracation warning for use of the `gets()` function. You can safely ignore this warning because the purpose of the program is to demonstrate the shortcomings of the `gets()` function and to discourage you from using it.
 
 ```
+%
 % make all
 gcc -Wall -Wextra -pedantic -std=c99 input1_str_gets.c -o input1.exe
 input1_str_gets.c:11:9: warning: 'gets' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of gets(3), it is highly recommended that you use fgets(3) instead. [-Wdeprecated-declarations]
@@ -30,9 +31,11 @@ input7.exe: input7_int_atoi.c
 input8.exe: input8_int_scanf.c
 input9.exe: input9_int_strtol.c
 input.exe:  input.c (uses the console_util library)
+
+%
 ```
 
-All of the programs work with friendly inputs. But some of them contain buffer overflows, or integer overflows, or will return invalid answers for hostile input.
+All of the programs work with friendly inputs. But some of them contain buffer overflows or integer overflows. Some will return invalid answers for hostile input.
 
 If you'd like to delete the 10 demo programs all at once, run `make clean`.
 
@@ -68,7 +71,7 @@ The programs were intended to be run in a specific order:
 
 ## Maintainers
 
-[@JoshuaTallman](https://github.com/prof-tallman).
+[@JoshuaTallman](https://github.com/prof-tallman)
 
 ## Contributing
 These programs were written as an example for students.
